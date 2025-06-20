@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.delete-btn {
+    margin-left: 10px;
+    padding: 4px 8px;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background-color: darkred;
+}
+#duplicateFilesList {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+.title {
+    font-weight: bold;
+    color: #333;
+}
+li {
+    padding: 8px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.alert {
+    color: red;
+    font-weight: bold;
+}
+.no-duplicates {
+    color: gray;
+}

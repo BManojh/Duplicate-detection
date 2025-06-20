@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicate Files Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            width: 320px; /* Ensure it fits inside the Chrome extension popup */
+        }
+        h2 {
+            color: #333;
+            font-size: 18px;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-height: 200px;
+            overflow-y: auto; /* Allow scrolling */
+            border: 1px solid #ddd;
+            padding: 10px;
+            background: #fff;
+        }
+        li {
+            background: #fff;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            word-break: break-all;
+        }
+        .no-duplicates {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+        .duplicate {
+            color: red;
+            font-weight: bold;
+        }
+        .all-files {
+            color: #007bff;
+            font-weight: bold;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Duplicate Files Checker</h2>
+
+    <button id="showDownloads">Show Downloads</button>
+    
+    <ul id="duplicateFilesList">
+        <li class="no-duplicates">Click 'Show Downloads' to check for duplicates.</li>
+    </ul>
+    <button id="showDuplicates">Show Duplicates</button>
+
+    <script src="result.js"></script>
+
+</body>
+</html>

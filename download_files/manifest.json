@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Duplicate Download Alert System",
+  "version": "1.0",
+  "description": "Alerts user if a file is already downloaded.",
+  "permissions": ["downloads", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
