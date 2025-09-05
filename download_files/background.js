@@ -14,7 +14,7 @@ chrome.downloads.onDeterminingFilename.addListener((downloadItem, suggest) => {
                 message: `The file "${filename}" is already downloaded!`
             });
 
-            // Prevent duplicate download
+            
             suggest({ filename, conflictAction: "overwrite" });
         } else {
             // Add new file to storage
@@ -23,3 +23,4 @@ chrome.downloads.onDeterminingFilename.addListener((downloadItem, suggest) => {
         }
     });
 });
+
